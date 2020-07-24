@@ -1,25 +1,27 @@
-/**
-package com.sumeyyeakay.demo.service;
 
-import com.sumeyyeakay.demo.dto.ActorsDTO;
-import com.sumeyyeakay.demo.dto.SeriesDTO;
-import com.sumeyyeakay.demo.mapper.ActorMapper;
-import com.sumeyyeakay.demo.mapper.SeriesMapper;
-import com.sumeyyeakay.demo.model.Actors;
-import com.sumeyyeakay.demo.model.Series;
-import com.sumeyyeakay.demo.repository.ActorsRepository;
-import com.sumeyyeakay.demo.repository.SeriesRepository;
-import com.sumeyyeakay.demo.service.base.SeriesService;
-import com.sumeyyeakay.demo.utils.ListActors;
+package com.sumeyyeakay.service;
+
+import com.sumeyyeakay.dto.ActorsDTO;
+import com.sumeyyeakay.dto.SeriesDTO;
+import com.sumeyyeakay.mapper.ActorMapper;
+import com.sumeyyeakay.mapper.SeriesMapper;
+import com.sumeyyeakay.model.Actors;
+import com.sumeyyeakay.model.Series;
+import com.sumeyyeakay.repository.ActorsRepository;
+import com.sumeyyeakay.repository.SeriesRepository;
+import com.sumeyyeakay.service.base.SeriesService;
+import com.sumeyyeakay.utils.ListActors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Service;
 
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+/**
+@Service
 public class SeriesServiceImpl implements SeriesService {
 
     @Autowired
@@ -145,10 +147,6 @@ public class SeriesServiceImpl implements SeriesService {
     }
 
 
-     * @Sort
-     * Kontrol et
-     *
-
 
     @Override
     public List<SeriesDTO> seriesDesc() {
@@ -167,5 +165,6 @@ public class SeriesServiceImpl implements SeriesService {
         List<Series> series = this.seriesRepository.findAll(byIncreasing());
         return series;
     }
+
 }
-**/
+        */

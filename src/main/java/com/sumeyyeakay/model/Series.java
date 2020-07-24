@@ -10,7 +10,6 @@ import lombok.Data;
 
 @Entity
 @Data
-@EntityListeners(AuditingEntityListener.class)
 public class Series implements Serializable {
     private static final long serialVersionUID = 4868624973343083042L;
 

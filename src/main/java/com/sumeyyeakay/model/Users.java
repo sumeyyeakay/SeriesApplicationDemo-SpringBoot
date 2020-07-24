@@ -1,16 +1,17 @@
 package com.sumeyyeakay.model;
 
 
+import com.sumeyyeakay.dto.RoleDTO;
 import lombok.Data;
 import org.hibernate.annotations.Type;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
+import java.util.List;
 import java.util.UUID;
 @Data
 @Entity
 
-@EntityListeners(AuditingEntityListener.class)
 public class Users {
 
     @Id
@@ -36,5 +37,7 @@ public class Users {
 
     @Column(nullable = false)
     private Boolean isActive;
+
+
 
 }
